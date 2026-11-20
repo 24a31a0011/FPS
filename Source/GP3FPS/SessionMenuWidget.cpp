@@ -12,7 +12,7 @@ bool USessionMenuWidget::CreateRoom(FString RoomName)
 {
     RoomName.TrimStartAndEndInline();
 
-    if(RoomName.IsEmpty() || !GetGameInstance())
+    if (!GetGameInstance())
     {
         return false;
     }
